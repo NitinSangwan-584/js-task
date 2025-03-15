@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <style>
+        .blue-text {
+            color: blue;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body onload="changeBackgroundColor()">
+    <!-- change color -->
+    <p id="text">This is a paragraph.</p>
+    <button onclick="changeTextColor()">Change Text Color</button>
+
+    <!-- input -->
+    <input type="text" id="inputField" placeholder="Enter something">
+    <button onclick="getInputValue()">Get Input Value</button>
+
+    <!-- create new element -->
+    <button onclick="createNewElement()">Create New Paragraph</button>
+
+    <!-- remove element -->
+    <p id="removeMe">This paragraph will be removed.</p>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <!-- count no of para -->
+    <p>This is paragraph 1.</p>
+    <p>This is paragraph 2.</p>
+    <p>This is paragraph 3.</p>
+    <button onclick="countParagraphs()">Count Paragraphs</button>
+
+    <!-- add css class -->
+    <p id="text">This is a paragraph.</p>
+    <button onclick="addClass()">Add CSS Class</button>
+
+    <!-- get value of selected itm -->
+    <label for="dropdown">Choose an option:</label>
+    <select id="dropdown">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+    </select>
+    <button onclick="getSelectedOption()">Get Selected Option</button>
+
+    <!-- toggle  visible element  -->
+    <p id="togglePara">This paragraph will be toggled.</p>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <!-- Prevent Default Form Submission -->
+    <form id="myForm">
+        <input type="text" placeholder="Enter something">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
